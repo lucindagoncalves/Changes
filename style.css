@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container {
+   background-color: white;
+   border-radius: 10px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0.3);
+   width: 400px;
+   max-width: 100%;
+   overflow: hidden;
+}
+
+.header {
+    background-color: white;
+    padding: 20px;
+}
+
+.form {
+    padding: 20px;
+
+}
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.form-control input {
+    border: 2px solid  white;
+    display: block;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+}
+
+.form-control i {
+   position: absolute;
+    top: 45px;
+    right: 10px;
+    visibility: hidden;
+}
+
+.form-control small {
+    position: absolute;
+    top: 45px;
+    bottom: 0;
+    left: 0;
+    visibility: hidden
+}
+
+.form button {
+    background-color: aqua;
+    border: 2px solid aqua;
+    color: black;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* error and sucess */
+.form-control.sucess input {
+    border-color: rgb(36, 221, 36);
+}
+.form-control.error input {
+    border-color: red;
+}
+
+.form-control.sucess i.fa-circle-check {
+    color: rgb(36, 221, 36);
+    visibility: visible;
+}
+.form-control.error i.fa-circle-exclamation {
+    color: red;
+    visibility: visible;
+}
+.form-control.error small {
+    visibility: visible;
+    color: red;
+}
