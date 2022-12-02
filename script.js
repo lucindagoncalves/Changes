@@ -11,10 +11,16 @@ form.addEventListener("submit", (e) => {
 function checkInputs() {
     const usernameValue = username.value;
     const emailValue = email.value;
-    const passeword = passeword.value;
-    const passewordconfirmation = passeword-confirmation.value;
-    if (usernameValue === '') {
-        setE
+    const pwd = passeword.value;
+    const passewordconfirmatio = passewordconfirmation.value;
+    const lucinda = [ usernameValue, emailValue, pwd, passewordconfirmatio ]
+    console.log (username.value)
+    console.log (lucinda)
+    // if (usernamevalue === '') {
+    //     setE
 
-    }
+    // }
 }
+
+
+
